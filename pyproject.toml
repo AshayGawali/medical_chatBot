@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medical_chatbot"
+version = "0.0.1"
+authors = [
+  { name = "Ashay", email = "gawali.ashay@gmail.com" }
+]
+description = "project on Medical ChatBot"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+dependencies = [
+  "langchain==0.3.26",
+  "flask==3.1.1",
+  "pypdf==5.7.0",
+  "python-dotenv==1.1.1",
+  "pinecone[grpc]==7.3.0",
+  "langchain-pinecone==0.2.8",
+  "langchain_community==0.3.26",
+  "langchain_openai==0.3.27",
+  "langchain_experimental==0.3.4"
+]
+
+keywords = ["LLM", "flask", "pinecone", "medical_chatbot", "data-science"]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+homepage = "https://github.com/AshayGawali/medical_chatBot"
+issues = "https://github.com/AshayGawali/medical_chatBot/issues"
+
+[tool.setuptools.packages.find]
+where = ["medical_chatbot"]
+include = ["medical_chatbot.*"]
+exclude = ["tests", "tests.*"]
