@@ -60,4 +60,3 @@ open up localhost:
 - Flask
 - GPT
 - Pinecone
-=======

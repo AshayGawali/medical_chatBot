@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+
+medical_chatbot/medical_chatbot.egg-info/
 # Distribution / packaging
 .Python
 build/
